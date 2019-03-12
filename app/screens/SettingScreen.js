@@ -21,19 +21,19 @@ export class SettingScreen extends React.Component {
 
             <View style={styles.container}>
 
-            <OurButton borderRadius='15' color='green' onPress={() => this.onButtonPressed()}>
+            <OurButton borderRadius='15' color='#9a73ef' onPress={() => this.onButtonPressed()}>
                 <Text style={{fontSize: 20, color: 'white'}}>Change Password</Text>
               </OurButton>
 
               <Text>     </Text>
 
-              <OurButton borderRadius='15' color='green' onPress={() => this.props.navigation.navigate('SignUpScreen')}>
+              <OurButton borderRadius='15' color='#9a73ef' onPress={() => this.props.navigation.navigate('SignUpScreen')}>
                 <Text style={{fontSize: 20, color: 'white'}}>Register New User</Text>
               </OurButton>
 
               <Text>     </Text>
 
-              <OurButton borderRadius='15' color='green' onPress={() => this.props.navigation.navigate('PromoScreen')}>
+              <OurButton borderRadius='15' color='#9a73ef' onPress={() => this.props.navigation.navigate('PromoScreen')}>
                 <Text style={{fontSize: 20, color: 'white'}}>Apply Promo Code</Text>
               </OurButton>
               

@@ -38,18 +38,17 @@ export class ProfileScreen extends React.Component {
             <Text>     </Text>
             <Text><Text style={{fontSize: 20,color: 'blue'}}>Email: </Text><Text style={{fontSize: 20,color: 'black',padding:3}}> joy.utosu@3line.com</Text></Text>
             <Text>     </Text>
-            <Text><Text style={{fontSize: 20,color: 'blue'}}>Password: </Text><Text style={{fontSize: 20,color: 'black',padding:3}}> *********</Text></Text>
-            <Text>     </Text>
+            {/* <Text><Text style={{fontSize: 20,color: 'blue'}}>Password: </Text><Text style={{fontSize: 20,color: 'black',padding:3}}> *********</Text></Text> */}
             <Text><Text style={{fontSize: 20,color: 'blue'}}>State: </Text><Text style={{fontSize: 20,color: 'black',padding:3}}> Lagos State</Text></Text>
             <Text>     </Text>
 
-            <OurButton borderRadius='15' color='green' onPress={() => this.onButtonPressed()}>
+            <OurButton borderRadius='15' color='#9a73ef' onPress={() => this.onButtonPressed()}>
                 <Text style={{fontSize: 20, color: 'white'}}>EditProfile</Text>
               </OurButton>
 
               <Text>     </Text>
 
-              <OurButton borderRadius='15' color='green' onPress={() => this.props.navigation.navigate('PromoScreen')}>
+              <OurButton borderRadius='15' color='#9a73ef' onPress={() => this.props.navigation.navigate('PromoScreen')}>
                 <Text style={{fontSize: 20, color: 'white'}}>Apply Promo Code</Text>
               </OurButton>
               </View>

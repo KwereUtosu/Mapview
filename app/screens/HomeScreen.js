@@ -44,9 +44,9 @@ export class HomeScreen extends React.Component {
              <Content contentContainerStyle={{
                 flex: 1,
             }}>
-            <Image
+            {/* <Image
                 style={styles.mapImage}
-                source={require('..//images/map.png')}/>
+                source={require('..//images/map.png')}/> */}
               </Content>
             </Content>
           </Container>

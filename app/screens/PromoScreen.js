@@ -38,7 +38,7 @@ export class PromoScreen extends React.Component {
                 onChangeText={ (state) => this.setState({ state}) }
                 />
                 
-              <OurButton borderRadius='15' color='green' onPress={() => this.onButtonPressed()}>
+              <OurButton borderRadius='15' color='#9a73ef' onPress={() => this.onButtonPressed()}>
                 <Text style={{fontSize: 20, color: 'white'}}>Apply Promo Code</Text>
               </OurButton>
 

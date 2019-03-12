@@ -43,10 +43,12 @@ export class HomeMap extends React.Component {
               <MapView
                 style={styles.map}
                 initialRegion={{
-                  latitude: 37.78825,
-                  longitude: -122.4324,
-                  latitudeDelta: 0.0922,
-                  longitudeDelta: 0.0421,
+                  //latitude: 37.78825,
+                  //longitude: -122.4324,
+                  latitude: 6.6080,
+                  longitude: 3.6218,
+                  latitudeDelta: 0.1,
+                  longitudeDelta: 0.1,
                 }}
               />
             </View>

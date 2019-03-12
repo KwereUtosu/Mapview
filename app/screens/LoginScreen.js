@@ -1,8 +1,10 @@
 import React from 'react';
-import { StyleSheet, Text, View,TextInput, Image, KeyboardAvoidingView,TouchableOpacity} from 'react-native';
+import { StyleSheet, Text, View,TextInput, Image, KeyboardAvoidingView,TouchableOpacity, Animated} from 'react-native';
 import { OurButton } from '..//tools/OurButton';
 import { Form } from '..//components/Form';
 import { TextField } from 'react-native-material-textfield';
+import * as Animatable from 'react-native-animatable';
+console.disableYellowBox = true;
 
 // import DrawerNavigator from './DrawerNavigator';
 
@@ -28,11 +30,15 @@ export class LoginScreen extends React.Component {
     
     return (
           <View style={styles.contain}>
-            <View style={styles.logoContainer}>
-              <Image style={styles.logo} source={require('..//images/pronto.jpg')}/>
-            </View>  
+            <View style={styles.containAnime}>
+            <Animatable.View animation="zoomIn" iterationCount={1} style={styles.fakeLogo}>
+              <Text style={{fontWeight: 'bold',color: 'white', fontSize: 30,alignSelf: 'center'}}>Q-LOQ</Text>
+              {/* <Image style={styles.logo} source={require('..//images/pronto.jpg')}/> */}
 
+            </Animatable.View>  
+            </View>
             {/* <View style={{flex: 1, justifyContent: 'center'}}> */}
+              <Animatable.View animation="slideInUp" iterationCount={1}>
             <KeyboardAvoidingView behavior='padding' style={styles.wrapper}>
               <View>
                 <TextField style={styles.textStyle}
@@ -64,7 +70,7 @@ export class LoginScreen extends React.Component {
              </OurButton>
              </KeyboardAvoidingView>
                 {/* </View> */}
-          </View>
+                </Animatable.View>
         //</View>
     );
   }
@@ -83,6 +89,11 @@ const styles = StyleSheet.create({
     padding: 5,
     backgroundColor: '#fff',
     // backgroundColor: '#D3D3D3',  
+  },containAnime: {
+    flex: 1,    
+    backgroundColor: '#fff',
+    alignSelf: 'center',
+    justifyContent: 'center', 
   },imageStyle: {
     flex: 1,    
     alignSelf: 'stretch',
@@ -101,5 +112,12 @@ const styles = StyleSheet.create({
     },
   wrapper: {
     padding: 10,    
-  }
+  },
+  fakeLogo:{
+    backgroundColor: 'red',
+    alignSelf: 'center',
+    justifyContent: 'center', 
+    width: 120,
+    height: 120
+    }
 });
